@@ -1,0 +1,46 @@
+<nav>
+  <ul>
+    <li>
+      <a href="<%= relative_url '/introduction' %>" class="<%= 'active' if active?('/introduction') %>">Introduction</a>
+      <ul>
+        <li>
+          <a href="<%= relative_url '/introduction/about_us' %>" class="<%= 'active' if active?('/introduction/about_us') %>">About Us</a>
+        </li>
+        <li>
+          <a href="<%= relative_url '/introduction/why_organizing_a_meetup' %>" class="<%= 'active' if active?('/introduction/why_organizing_a_meetup') %>">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="<%= relative_url '/name_purpose_and_branding' %>" class="<%= 'active' if active?('/name_purpose_and_branding') %>">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="<%= relative_url '/planning' %>" class="<%= 'active' if active?('/planning') %>">Planning</a></li>
+    <li><a href="<%= relative_url '/venue' %>" class="<%= 'active' if active?('/venue') %>">Venue</a></li>
+    <li><a href="<%= relative_url '/speakers' %>" class="<%= 'active' if active?('/speakers') %>">Speakers</a></li>
+    <li><a href="<%= relative_url '/food_and_beverages' %>" class="<%= 'active' if active?('/food_and_beverages') %>">Food and Beverages</a></li>
+    <li><a href="<%= relative_url '/sponsors' %>" class="<%= 'active' if active?('/sponsors') %>">Sponsors</a></li>
+    <li>
+      <a href="<%= relative_url '/online_presence' %>" class="<%= 'active' if active?('/online_presence') %>">Online Presence</a>
+      <ul>
+        <li>
+          <a href="<%= relative_url '/online_presence/branding' %>" class="<%= 'active' if active?('/online_presence/branding') %>">Branding</a>
+        </li>
+        <li>
+          <a href="<%= relative_url '/online_presence/social_media' %>" class="<%= 'active' if active?('/online_presence/social_media') %>">Social Media</a>
+        </li>
+        <li>
+          <a href="<%= relative_url '/online_presence/webpage' %>" class="<%= 'active' if active?('/online_presence/webpage') %>">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="<%= relative_url '/recording_and_streaming' %>" class="<%= 'active' if active?('/recording_and_streaming') %>">Recording and Streaming</a></li>
+    <li><a href="<%= relative_url '/swag' %>" class="<%= 'active' if active?('/swag') %>">Swag</a></li>
+    <li><a href="<%= relative_url '/volunteers' %>" class="<%= 'active' if active?('/volunteers') %>">Volunteers</a></li>
+    <li><a href="<%= relative_url '/code_of_conduct' %>" class="<%= 'active' if active?('/code_of_conduct') %>">Code of Conduct</a></li>
+    <li><a href="<%= relative_url '/post_event' %>" class="<%= 'active' if active?('/post_event') %>">Post-Event</a></li>
+    <li><a href="<%= relative_url '/growing_the_community' %>" class="<%= 'active' if active?('/growing_the_community') %>">Growing the Community</a></li>
+    <li><a href="<%= relative_url '/first_event_checklist' %>" class="<%= 'active' if active?('/first_event_checklist') %>">First Event Checklist</a></li>
+  </ul>
+</nav>

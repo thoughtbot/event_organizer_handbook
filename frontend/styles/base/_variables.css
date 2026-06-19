@@ -1,0 +1,134 @@
+:root {
+  /* thoughtbot.com color palette */
+  --color--black: #000000;
+
+  --color--blue-100: #e1f4ff;
+  --color--blue-600: #29a7d1;
+  --color--blue-700: #09475c;
+
+  --color--gray-100: #faf9f9;
+  --color--gray-200: #eae6e4;
+  --color--gray-300: #c1bab7;
+  --color--gray-400: #928a85;
+  --color--gray-500: #7b6e68;
+  --color--gray-600: #2f1c1c;
+  --color--gray-700: #201313;
+  --color--gray-800: #110606;
+
+  --color--green-500: #2bbe8f;
+  --color--green-600: #095c4f;
+
+  --color--purple-500: #a434e9;
+  --color--purple-600: #5c095c;
+  --color--purple-700: #3e194b;
+
+  --color--red-100: #fceaea;
+  --color--red-500: #f74239;
+  --color--red-600: #e03131;
+  --color--red-700: #5b0909;
+
+  --color--teal-600: #29d1b8;
+  --color--teal-700: #0a5c4a;
+
+  --color--white: #ffffff;
+
+  --color--yellow-100: #ffe7a3;
+  --color--yellow-700: #ffc726;
+
+  /* Semantic aliases — primary is red (thoughtbot brand) */
+  --color--primary-base: var(--color--red-600);
+  --color--primary-dark: var(--color--red-700);
+  --color--primary-light: var(--color--red-100);
+
+  --color--accent-base: var(--color--yellow-700);
+  --color--accent-dark: var(--color--yellow-100);
+  --color--accent-light: var(--color--yellow-100);
+
+  /* Background — dark theme */
+  --color--background-base: var(--color--gray-600);
+  --color--background-light: var(--color--gray-100);
+  --color--background-x-light: var(--color--white);
+  --color--background-dark: var(--color--gray-700);
+
+  /* Status */
+  --color--ui-danger-light: var(--color--red-100);
+  --color--ui-danger-base: var(--color--red-500);
+  --color--ui-danger-dark: var(--color--red-700);
+  --color--ui-success-light: var(--color--green-500);
+  --color--ui-success-base: var(--color--green-500);
+  --color--ui-success-dark: var(--color--green-600);
+
+  /* Text */
+  --color--text: var(--color--gray-200);
+  --color--text-heading: var(--color--gray-100);
+  --color--text-dimmed: var(--color--gray-300);
+  --color--text-inverse: var(--color--gray-600);
+  --color--link: var(--color--text);
+  --color--link-hover: var(--color--yellow-700);
+
+  /* Font sizes */
+  --font-size--50: 0.875rem;
+  --font-size--100: 1rem;
+  --font-size--200: 1.25rem;
+  --font-size--300: 1.5rem;
+  --font-size--400: 2.25rem;
+  --font-size--500: 3.75rem;
+
+  --font-size--body: var(--font-size--100);
+  --font-size--small: var(--font-size--50);
+  --font-size--ui: var(--font-size--100);
+  --font-size--section-title: var(--font-size--200);
+  --font-size--subheader: var(--font-size--300);
+  --font-size--header: var(--font-size--400);
+  --font-size--display: var(--font-size--500);
+
+  --font-weight--normal: 400;
+  --font-weight--bold: 700;
+
+  /* Fonts — using thoughtbot's fallback stacks (proprietary fonts not bundled) */
+  --font-family--body: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-family--heading: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --font-family--mono: "Monaco", "Consolas", "Lucida Console", monospace;
+
+  --line-height--base: 1.5;
+  --line-height--tight: 1.2;
+
+  /* Borders */
+  --border-radius--small: 0.25rem;
+  --border-radius--base: 0.25rem;
+  --border-radius--large: 1.5rem;
+  --border-radius--pill: 4rem;
+  --border-radius--circle: 100%;
+
+  --border-width--base: 1px;
+  --border-width--thick: 2px;
+
+  --border--base: var(--border-width--base) solid var(--color--gray-400);
+  --border--light: var(--border-width--base) solid var(--color--gray-500);
+  --border--dark: var(--border-width--thick) solid var(--color--gray-600);
+  --border--accent: var(--border-width--thick) solid var(--color--red-500);
+
+  /* Containers */
+  --container--base: 50rem;
+  --container--large: 85rem;
+  --container--site: 120rem;
+
+  /* Spacing */
+  --space--xx-small: 0.25rem;
+  --space--x-small: 0.5rem;
+  --space--small: 0.75rem;
+  --space--base: 1rem;
+  --space--medium: 1.5rem;
+  --space--large: 2rem;
+  --space--x-large: 3rem;
+  --space--xx-large: 4rem;
+
+  --transition-duration--base: 0.2s;
+  --transition-timing--base: ease-in-out;
+
+  --z-index--basement: -999999;
+  --z-index--base: 1;
+  --z-index--layout: 1000;
+  --z-index--modal: 4000;
+  --z-index--ceiling: 999999;
+}
