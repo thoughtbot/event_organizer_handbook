@@ -61,6 +61,15 @@ body {
   align-self: center;
 }
 
+.sidebar__logo {
+  display: block;
+  padding: var(--space--medium);
+
+  img {
+    width: 180px;
+  }
+}
+
 .sidebar__nav {
   flex: 1;
   overflow-x: hidden;
