@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Volunteers | Event Organizer Handbook by thoughtbot</title>
+
+<meta name="description" content="Want to start a meetup but have no idea how to start? This handbook covers everything!" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.HX4OZ4VU.css" />
+<script src="/_bridgetown/static/index.3AHEUSGL.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <div class="site-layout" id="site-layout">
+      <aside class="sidebar">
+        <button
+          class="sidebar__toggle"
+          id="sidebar-toggle"
+          aria-expanded="true"
+          aria-controls="sidebar-nav"
+          aria-label="Toggle navigation"
+        >&#8249;</button>
+
+        <div class="sidebar__nav" id="sidebar-nav">
+          <nav>
+  <ul>
+    <li>
+      <a href="/introduction" class="">Introduction</a>
+      <ul>
+        <li>
+          <a href="/introduction/about_us" class="">About Us</a>
+        </li>
+        <li>
+          <a href="/introduction/why_organizing_a_meetup" class="">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="/name_purpose_and_branding" class="">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="/planning" class="">Planning</a></li>
+    <li><a href="/venue" class="">Venue</a></li>
+    <li><a href="/speakers" class="">Speakers</a></li>
+    <li><a href="/food_and_beverages" class="">Food and Beverages</a></li>
+    <li><a href="/sponsors" class="">Sponsors</a></li>
+    <li>
+      <a href="/online_presence" class="">Online Presence</a>
+      <ul>
+        <li>
+          <a href="/online_presence/branding" class="">Branding</a>
+        </li>
+        <li>
+          <a href="/online_presence/social_media" class="">Social Media</a>
+        </li>
+        <li>
+          <a href="/online_presence/webpage" class="">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/recording_and_streaming" class="">Recording and Streaming</a></li>
+    <li><a href="/swag" class="">Swag</a></li>
+    <li><a href="/volunteers" class="active">Volunteers</a></li>
+    <li><a href="/code_of_conduct" class="">Code of Conduct</a></li>
+    <li><a href="/post_event" class="">Post-Event</a></li>
+    <li><a href="/growing_the_community" class="">Growing the Community</a></li>
+    <li><a href="/first_event_checklist" class="">First Event Checklist</a></li>
+  </ul>
+</nav>
+
+        </div>
+      </aside>
+
+      <div class="site-body">
+        <main>
+          <h1>Volunteers</h1>
+
+<p>Volunteers make the event easier to run and better for everyone in the room. They’re also hard to find at first. 
+Design your meetup so you can run it alone, because for a while, you probably will.</p>
+
+<h2 id="what-volunteers-do">What volunteers do</h2>
+
+<p>Before the event, a single person can help with several things: social media posts, scouting speakers, reaching out to 
+potential sponsors. RubyMX has one dedicated person who handles social media and a small group of rotating volunteers 
+who also help find speakers and sponsors between events.</p>
+
+<p>On the day of the event, roles split more clearly:</p>
+
+<ul>
+  <li><strong>Registration</strong>: someone at the door checking in attendees while the rest of the team sets up</li>
+  <li><strong>Tech setup</strong>: getting slides and streaming running before doors open</li>
+  <li><strong>Host</strong>: the person running the event, introducing speakers, keeping time</li>
+  <li><strong>Floor support</strong>: welcoming late arrivals, answering questions, keeping the room running smoothly</li>
+</ul>
+
+<p>Three people is a good number for the day. It’s enough to cover the basics without the coordination overhead of a 
+larger group.</p>
+
+<h2 id="finding-volunteers">Finding volunteers</h2>
+
+<p>Ask at the end of every event. A brief mention, that you’re looking for people to help and what that involves, is 
+enough. Some attendees are already thinking about it.</p>
+
+<p>It may take a while before anyone steps up. That’s normal. Keep asking.</p>
+
+<h2 id="what-they-get">What they get</h2>
+
+<p>Swag, if you have it, is a small way to say thank you, but nobody volunteers at a community meetup for swag. They do 
+it because they believe in what the meetup is for. Acknowledge that. Thank them publicly, by name, at the event and in 
+your posts. That matters more than any physical reward.</p>
+
+
+        </main>
+
+        <footer>
+  <div>
+    © 2026 thoughtbot, inc.
+  </div>
+  <div>
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Code of Conduct | Event Organizer Handbook by thoughtbot</title>
+
+<meta name="description" content="Want to start a meetup but have no idea how to start? This handbook covers everything!" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.HX4OZ4VU.css" />
+<script src="/_bridgetown/static/index.3AHEUSGL.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <div class="site-layout" id="site-layout">
+      <aside class="sidebar">
+        <button
+          class="sidebar__toggle"
+          id="sidebar-toggle"
+          aria-expanded="true"
+          aria-controls="sidebar-nav"
+          aria-label="Toggle navigation"
+        >&#8249;</button>
+
+        <div class="sidebar__nav" id="sidebar-nav">
+          <nav>
+  <ul>
+    <li>
+      <a href="/introduction" class="">Introduction</a>
+      <ul>
+        <li>
+          <a href="/introduction/about_us" class="">About Us</a>
+        </li>
+        <li>
+          <a href="/introduction/why_organizing_a_meetup" class="">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="/name_purpose_and_branding" class="">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="/planning" class="">Planning</a></li>
+    <li><a href="/venue" class="">Venue</a></li>
+    <li><a href="/speakers" class="">Speakers</a></li>
+    <li><a href="/food_and_beverages" class="">Food and Beverages</a></li>
+    <li><a href="/sponsors" class="">Sponsors</a></li>
+    <li>
+      <a href="/online_presence" class="">Online Presence</a>
+      <ul>
+        <li>
+          <a href="/online_presence/branding" class="">Branding</a>
+        </li>
+        <li>
+          <a href="/online_presence/social_media" class="">Social Media</a>
+        </li>
+        <li>
+          <a href="/online_presence/webpage" class="">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/recording_and_streaming" class="">Recording and Streaming</a></li>
+    <li><a href="/swag" class="">Swag</a></li>
+    <li><a href="/volunteers" class="">Volunteers</a></li>
+    <li><a href="/code_of_conduct" class="active">Code of Conduct</a></li>
+    <li><a href="/post_event" class="">Post-Event</a></li>
+    <li><a href="/growing_the_community" class="">Growing the Community</a></li>
+    <li><a href="/first_event_checklist" class="">First Event Checklist</a></li>
+  </ul>
+</nav>
+
+        </div>
+      </aside>
+
+      <div class="site-body">
+        <main>
+          <h1>Code of Conduct</h1>
+
+<p>A code of conduct sets a clear expectation that everyone at the event; attendees, speakers, sponsors, and organizers,
+is responsible for maintaining a respectful environment. It’s not a formality. It’s what makes the meetup a 
+place where people feel safe showing up.</p>
+
+<h2 id="what-to-include">What to include</h2>
+
+<p>At minimum, a code of conduct should cover:</p>
+
+<ul>
+  <li>Who it applies to (everyone: attendees, speakers, sponsors)</li>
+  <li>What behavior is prohibited (harassment, intimidation, unwelcome recording, offensive comments based on gender, race,</li>
+  <li>disability, religion, and similar characteristics)</li>
+  <li>How to report a violation (a person to contact, an email address, or both)</li>
+  <li>What happens when the code is violated (organizers can ask someone to leave and ban them from future events)</li>
+</ul>
+
+<p>The <a href="https://www.contributor-covenant.org/">Contributor Covenant</a> is a well-established starting point that many tech communities use. 
+The <a href="https://comunidadruby.mx/en/code_of_conduct/">RubyMX Code of Conduct</a> is another reference.</p>
+
+<h2 id="communicating-it">Communicating it</h2>
+
+<p>A code of conduct only works if people know it exists. RubyMX communicates it in two ways:</p>
+
+<ul>
+  <li>During registration: attendees agree to the code of conduct when they get their ticket</li>
+  <li>At the start of every event: the host reads the code of conduct aloud and explains who to contact if something happens</li>
+</ul>
+
+<p>Both matter. The registration mention sets the expectation in advance. The in-person reading makes it real for the room 
+and tells people where to go for help.</p>
+
+<p>Make sure volunteers know who the point of contact is. Attendees who need to report something should be able to reach 
+someone immediately, not just an email address.</p>
+
+<h2 id="enforcement">Enforcement</h2>
+
+<p>If someone violates the code of conduct, organizers have the authority to ask them to leave and to ban them from future 
+events. That’s the full range: a private conversation at the low end, removal and a permanent ban at the high end.</p>
+
+<p>As organizer, you won’t always know what happened until someone tells you. Take reports seriously and act on them. 
+The people who report something are usually more afraid of not being believed than they are of the person they’re 
+reporting.</p>
+
+
+        </main>
+
+        <footer>
+  <div>
+    © 2026 thoughtbot, inc.
+  </div>
+  <div>
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </body>
+</html>

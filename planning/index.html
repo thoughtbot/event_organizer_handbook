@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Planning | Event Organizer Handbook by thoughtbot</title>
+
+<meta name="description" content="Want to start a meetup but have no idea how to start? This handbook covers everything!" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.HX4OZ4VU.css" />
+<script src="/_bridgetown/static/index.3AHEUSGL.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <div class="site-layout" id="site-layout">
+      <aside class="sidebar">
+        <button
+          class="sidebar__toggle"
+          id="sidebar-toggle"
+          aria-expanded="true"
+          aria-controls="sidebar-nav"
+          aria-label="Toggle navigation"
+        >&#8249;</button>
+
+        <div class="sidebar__nav" id="sidebar-nav">
+          <nav>
+  <ul>
+    <li>
+      <a href="/introduction" class="">Introduction</a>
+      <ul>
+        <li>
+          <a href="/introduction/about_us" class="">About Us</a>
+        </li>
+        <li>
+          <a href="/introduction/why_organizing_a_meetup" class="">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="/name_purpose_and_branding" class="">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="/planning" class="active">Planning</a></li>
+    <li><a href="/venue" class="">Venue</a></li>
+    <li><a href="/speakers" class="">Speakers</a></li>
+    <li><a href="/food_and_beverages" class="">Food and Beverages</a></li>
+    <li><a href="/sponsors" class="">Sponsors</a></li>
+    <li>
+      <a href="/online_presence" class="">Online Presence</a>
+      <ul>
+        <li>
+          <a href="/online_presence/branding" class="">Branding</a>
+        </li>
+        <li>
+          <a href="/online_presence/social_media" class="">Social Media</a>
+        </li>
+        <li>
+          <a href="/online_presence/webpage" class="">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/recording_and_streaming" class="">Recording and Streaming</a></li>
+    <li><a href="/swag" class="">Swag</a></li>
+    <li><a href="/volunteers" class="">Volunteers</a></li>
+    <li><a href="/code_of_conduct" class="">Code of Conduct</a></li>
+    <li><a href="/post_event" class="">Post-Event</a></li>
+    <li><a href="/growing_the_community" class="">Growing the Community</a></li>
+    <li><a href="/first_event_checklist" class="">First Event Checklist</a></li>
+  </ul>
+</nav>
+
+        </div>
+      </aside>
+
+      <div class="site-body">
+        <main>
+          <h1>Planning</h1>
+
+<h2 id="cadence">Cadence</h2>
+
+<p>RubyMX runs monthly, usually on the last Thursday of the month. That date can shift by a week or move to a different 
+weekday depending on sponsor availability,  but the minimum gap between events is four weeks. That’s enough time to 
+prepare without losing momentum.</p>
+
+<p>Consistency matters more than frequency. Skipping an edition for personal reasons is fine, but a predictable schedule 
+makes it easier for attendees to plan around you.</p>
+
+<h2 id="event-format">Event format</h2>
+
+<p>A typical RubyMX event starts at 7 PM and runs about two hours, followed by informal networking:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Segment</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7:00 PM</td>
+      <td>Registration and mingling</td>
+    </tr>
+    <tr>
+      <td>7:30 PM</td>
+      <td>Welcome</td>
+    </tr>
+    <tr>
+      <td>7:40 PM</td>
+      <td>Talk 1 (community member, ~20 min)</td>
+    </tr>
+    <tr>
+      <td>8:00 PM</td>
+      <td>Talk 2 (~20 min)</td>
+    </tr>
+    <tr>
+      <td>8:20 PM</td>
+      <td>Sponsor message (~10 min)</td>
+    </tr>
+    <tr>
+      <td>8:30 PM</td>
+      <td>Closing talk (~30 min)</td>
+    </tr>
+    <tr>
+      <td>9:00 PM</td>
+      <td>Networking</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The registration window doubles as warm-up time: attendees arrive, grab a drink, and meet each other before anything 
+formal starts. Don’t rush it.</p>
+
+<p>Talks follow a consistent structure: the first is from a community member, the second from a representative of the 
+sponsor company, and the closing talk tends to be longer. 
+When coordinating with the sponsor’s speaker, share what kinds of topics your audience responds to. Not every company 
+knows what a tech meetup crowd wants to hear.</p>
+
+<p>There’s no theme for a regular edition. Themes work well for joint events with other communities, but for a monthly 
+meetup, a loose lineup is easier to fill consistently.</p>
+
+<h2 id="planning-timeline">Planning timeline</h2>
+
+<p>The best time to plan the next event is at the end of the current one. By the time the talks are over, you usually know 
+who’s interested in hosting. 
+Confirm the sponsor, venue, and date on the spot if you can, then announce it to the room.</p>
+
+<p>From there, the order matters:</p>
+
+<ol>
+  <li>Find your community speaker from the speaker pool (see the <a href="/speakers">Speakers</a> section).</li>
+  <li>Coordinate with the sponsor to find their speaker.</li>
+  <li>Once the first speaker is confirmed, announce the event online and open tickets on Eventbrite.</li>
+  <li>Once the second speaker is confirmed, finalize the announcement and, if you are going to stream the talk, 
+see the <a href="/recording_and_streaming">Recording and Streaming</a> section.</li>
+  <li>A couple of days before the event, do a final push: remind your audience and promote the stream.</li>
+</ol>
+
+<p>RubyMX uses one rotating sponsor per event. A single fixed sponsor would be simpler, but the rotating model has a 
+practical advantage: companies are more willing to commit to a one-off sponsorship. If the event goes well, they come 
+back.</p>
+
+
+        </main>
+
+        <footer>
+  <div>
+    © 2026 thoughtbot, inc.
+  </div>
+  <div>
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </body>
+</html>

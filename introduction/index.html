@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Introduction | Event Organizer Handbook by thoughtbot</title>
+
+<meta name="description" content="Want to start a meetup but have no idea how to start? This handbook covers everything!" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.HX4OZ4VU.css" />
+<script src="/_bridgetown/static/index.3AHEUSGL.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <div class="site-layout" id="site-layout">
+      <aside class="sidebar">
+        <button
+          class="sidebar__toggle"
+          id="sidebar-toggle"
+          aria-expanded="true"
+          aria-controls="sidebar-nav"
+          aria-label="Toggle navigation"
+        >&#8249;</button>
+
+        <div class="sidebar__nav" id="sidebar-nav">
+          <nav>
+  <ul>
+    <li>
+      <a href="/introduction" class="active">Introduction</a>
+      <ul>
+        <li>
+          <a href="/introduction/about_us" class="">About Us</a>
+        </li>
+        <li>
+          <a href="/introduction/why_organizing_a_meetup" class="">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="/name_purpose_and_branding" class="">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="/planning" class="">Planning</a></li>
+    <li><a href="/venue" class="">Venue</a></li>
+    <li><a href="/speakers" class="">Speakers</a></li>
+    <li><a href="/food_and_beverages" class="">Food and Beverages</a></li>
+    <li><a href="/sponsors" class="">Sponsors</a></li>
+    <li>
+      <a href="/online_presence" class="">Online Presence</a>
+      <ul>
+        <li>
+          <a href="/online_presence/branding" class="">Branding</a>
+        </li>
+        <li>
+          <a href="/online_presence/social_media" class="">Social Media</a>
+        </li>
+        <li>
+          <a href="/online_presence/webpage" class="">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/recording_and_streaming" class="">Recording and Streaming</a></li>
+    <li><a href="/swag" class="">Swag</a></li>
+    <li><a href="/volunteers" class="">Volunteers</a></li>
+    <li><a href="/code_of_conduct" class="">Code of Conduct</a></li>
+    <li><a href="/post_event" class="">Post-Event</a></li>
+    <li><a href="/growing_the_community" class="">Growing the Community</a></li>
+    <li><a href="/first_event_checklist" class="">First Event Checklist</a></li>
+  </ul>
+</nav>
+
+        </div>
+      </aside>
+
+      <div class="site-body">
+        <main>
+          <h1>Introduction</h1>
+
+<p>Try to identify yourself in one of the following three scenarios:</p>
+
+<ul>
+  <li>You work in tech, and there’s no meetup in your city.</li>
+  <li>There is a meetup in your city, but it stopped running.</li>
+  <li>You’ve been attending someone else’s meetup for years and you’re starting to think: I could do this.</li>
+</ul>
+
+<p>If you can relate to at least one of the previous points, this handbook is for you. It covers picking a name, 
+finding speakers, sponsors, and a venue, running the event itself, and what to do the day after. The knowledge comes 
+from running <a href="https://comunidadruby.mx/en">RubyMX</a>, a Ruby meetup in Guadalajara, Mexico that started with five people 
+in a coworking space and has been running monthly ever since.</p>
+
+<p>Before getting into the details, two pages worth reading first:</p>
+
+<ul>
+  <li><a href="/introduction/why_organizing_a_meetup">Why Organizing a Meetup?</a>: what a meetup actually gives to the community, to speakers, and to you as the organizer</li>
+  <li><a href="/introduction/about_us">About Us</a>: where this handbook comes from and who wrote it</li>
+</ul>
+
+
+        </main>
+
+        <footer>
+  <div>
+    © 2026 thoughtbot, inc.
+  </div>
+  <div>
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </body>
+</html>

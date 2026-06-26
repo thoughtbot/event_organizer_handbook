@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Name, Purpose, and Branding | Event Organizer Handbook by thoughtbot</title>
+
+<meta name="description" content="Want to start a meetup but have no idea how to start? This handbook covers everything!" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.HX4OZ4VU.css" />
+<script src="/_bridgetown/static/index.3AHEUSGL.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <div class="site-layout" id="site-layout">
+      <aside class="sidebar">
+        <button
+          class="sidebar__toggle"
+          id="sidebar-toggle"
+          aria-expanded="true"
+          aria-controls="sidebar-nav"
+          aria-label="Toggle navigation"
+        >&#8249;</button>
+
+        <div class="sidebar__nav" id="sidebar-nav">
+          <nav>
+  <ul>
+    <li>
+      <a href="/introduction" class="">Introduction</a>
+      <ul>
+        <li>
+          <a href="/introduction/about_us" class="">About Us</a>
+        </li>
+        <li>
+          <a href="/introduction/why_organizing_a_meetup" class="">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="/name_purpose_and_branding" class="active">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="/planning" class="">Planning</a></li>
+    <li><a href="/venue" class="">Venue</a></li>
+    <li><a href="/speakers" class="">Speakers</a></li>
+    <li><a href="/food_and_beverages" class="">Food and Beverages</a></li>
+    <li><a href="/sponsors" class="">Sponsors</a></li>
+    <li>
+      <a href="/online_presence" class="">Online Presence</a>
+      <ul>
+        <li>
+          <a href="/online_presence/branding" class="">Branding</a>
+        </li>
+        <li>
+          <a href="/online_presence/social_media" class="">Social Media</a>
+        </li>
+        <li>
+          <a href="/online_presence/webpage" class="">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/recording_and_streaming" class="">Recording and Streaming</a></li>
+    <li><a href="/swag" class="">Swag</a></li>
+    <li><a href="/volunteers" class="">Volunteers</a></li>
+    <li><a href="/code_of_conduct" class="">Code of Conduct</a></li>
+    <li><a href="/post_event" class="">Post-Event</a></li>
+    <li><a href="/growing_the_community" class="">Growing the Community</a></li>
+    <li><a href="/first_event_checklist" class="">First Event Checklist</a></li>
+  </ul>
+</nav>
+
+        </div>
+      </aside>
+
+      <div class="site-body">
+        <main>
+          <h1>Name, Purpose, and Branding</h1>
+
+<p>Having a focus gives you an identity: “Ruby developers in Guadalajara” is more findable than “tech people who want to
+hang out.” 
+That doesn’t mean staying rigid. RubyMX has hosted talks on design, security, and general web topics, and done crossover
+events with Rust Mexico and GDLJS. A focus is a starting point, not a constraint.</p>
+
+<h2 id="name">Name</h2>
+
+<p>Pick something short and memorable that signals scope. The name doesn’t have to be in English (RubyMX works in both 
+English and Spanish), but it should be easy to say and hard to confuse with other meetups in your region.</p>
+
+<p>Scope matters more than you’d expect. RubyGDL was fine for a city-level meetup, but the name became a ceiling when the 
+goal grew to all of Mexico. RubyMX said the same thing in a wider voice. You can avoid any city reference in the name 
+as well.</p>
+
+<p>Your display name and your internet handle don’t have to match exactly. <code class="highlighter-rouge">@comunidadrubymx</code> is longer than “RubyMX” 
+but it’s consistent, clear, and available. 
+Check handle availability on the platforms you plan to use before you commit to a name, and register a domain if 
+you can. 
+Discovering your name is taken after you’ve built an audience is friction you don’t need.</p>
+
+<h2 id="purpose">Purpose</h2>
+
+<p>You don’t need a formal mission statement, but having a rough idea of what your meetup is for helps. 
+It tells speakers what kind of talk belongs, and it tells attendees what to expect.</p>
+
+<p>For RubyMX, the purpose is simple: a meetup for Ruby enthusiasts of all levels. From that, a practical rule emerged: 
+at least one talk per event has to be about Ruby.
+The second can be Ruby or something adjacent. That constraint keeps the identity intact without making the meetup feel 
+narrow.</p>
+
+<p>Your purpose doesn’t have to be perfect on day one. It usually isn’t, but having something to point at, even loosely,
+is better than nothing.</p>
+
+<h2 id="branding">Branding</h2>
+
+<p>At minimum, secure consistent handles across the platforms you plan to use and a domain if you can get one. 
+Which platforms depend on your community: RubyMX uses Twitter, Instagram, LinkedIn, YouTube, and Facebook, plus a custom 
+domain at comunidadruby.mx, but not every meetup needs all of those.</p>
+
+<p>The visual side (logo, colors, tone) matters more once you have an audience. More on that in the <a href="/online_presence">Online Presence</a> section.</p>
+
+
+        </main>
+
+        <footer>
+  <div>
+    © 2026 thoughtbot, inc.
+  </div>
+  <div>
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </body>
+</html>

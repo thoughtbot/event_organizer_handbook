@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sponsors | Event Organizer Handbook by thoughtbot</title>
+
+<meta name="description" content="Want to start a meetup but have no idea how to start? This handbook covers everything!" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.HX4OZ4VU.css" />
+<script src="/_bridgetown/static/index.3AHEUSGL.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <div class="site-layout" id="site-layout">
+      <aside class="sidebar">
+        <button
+          class="sidebar__toggle"
+          id="sidebar-toggle"
+          aria-expanded="true"
+          aria-controls="sidebar-nav"
+          aria-label="Toggle navigation"
+        >&#8249;</button>
+
+        <div class="sidebar__nav" id="sidebar-nav">
+          <nav>
+  <ul>
+    <li>
+      <a href="/introduction" class="">Introduction</a>
+      <ul>
+        <li>
+          <a href="/introduction/about_us" class="">About Us</a>
+        </li>
+        <li>
+          <a href="/introduction/why_organizing_a_meetup" class="">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="/name_purpose_and_branding" class="">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="/planning" class="">Planning</a></li>
+    <li><a href="/venue" class="">Venue</a></li>
+    <li><a href="/speakers" class="">Speakers</a></li>
+    <li><a href="/food_and_beverages" class="">Food and Beverages</a></li>
+    <li><a href="/sponsors" class="active">Sponsors</a></li>
+    <li>
+      <a href="/online_presence" class="">Online Presence</a>
+      <ul>
+        <li>
+          <a href="/online_presence/branding" class="">Branding</a>
+        </li>
+        <li>
+          <a href="/online_presence/social_media" class="">Social Media</a>
+        </li>
+        <li>
+          <a href="/online_presence/webpage" class="">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/recording_and_streaming" class="">Recording and Streaming</a></li>
+    <li><a href="/swag" class="">Swag</a></li>
+    <li><a href="/volunteers" class="">Volunteers</a></li>
+    <li><a href="/code_of_conduct" class="">Code of Conduct</a></li>
+    <li><a href="/post_event" class="">Post-Event</a></li>
+    <li><a href="/growing_the_community" class="">Growing the Community</a></li>
+    <li><a href="/first_event_checklist" class="">First Event Checklist</a></li>
+  </ul>
+</nav>
+
+        </div>
+      </aside>
+
+      <div class="site-body">
+        <main>
+          <h1>Sponsors</h1>
+
+<h2 id="finding-sponsors">Finding sponsors</h2>
+
+<p>Your network is the best starting point. The first sponsors for any meetup are usually people you already know or companies you’ve worked with.</p>
+
+<p>Beyond your network: LinkedIn is useful for finding companies actively hiring for roles that overlap with your community. 
+If a company is looking for Ruby engineers, they may be interested in getting in front of that audience. 
+Companies that reach out to you personally about job openings are also worth approaching: if their location makes sense, offer them a hosting opportunity.</p>
+
+<h2 id="approaching-a-company">Approaching a company</h2>
+
+<p>The most common model for RubyMX is a tech company hosting the event at their offices. The organizers get a free space, 
+and the company gets direct visibility with a room full of relevant developers.</p>
+
+<p>When approaching a company, be specific about what you’re asking. For RubyMX, this is what our brochure document mentions:</p>
+
+<ul>
+  <li>A room with a projector and HDMI, with seating for 40 to 50 people</li>
+  <li>Access from setup time, at least an hour before doors open</li>
+  <li>Drinks and snacks are appreciated but optional: the organizers can cover that if needed</li>
+</ul>
+
+<p>In return, the sponsor receives:</p>
+<ul>
+  <li>A 10-minute slot to present their company and open positions</li>
+  <li>The closing talk, given by one of their speakers</li>
+  <li>Promotion on your social channels and event materials</li>
+</ul>
+
+<p>Having a written one-pager or brochure makes this conversation easier. It sets expectations upfront and signals that the
+meetup is organized and professional.</p>
+
+<p>Keep the arrangement in-kind: no cash. Cash introduces tax paperwork and compliance requirements that vary by country 
+and company. It is simpler when the company handles purchases themselves or hires catering directly.</p>
+
+<h2 id="coordinating-with-sponsors">Coordinating with sponsors</h2>
+
+<p>Once a company agrees to sponsor, stay in contact. Offer check-in calls as well as async communication, 
+and answer their questions quickly. Early responsiveness builds trust.</p>
+
+<p>A few things to confirm with them:</p>
+
+<ul>
+  <li>Whether they want to use their own artwork for the event or are fine with your existing materials</li>
+  <li>Whether they have their own registration system or prefer you to manage ticketing</li>
+  <li>What attendee information, if any, they’d like after the event</li>
+</ul>
+
+<p>On that last point: agree upfront on what gets shared. Name, email, and job title are standard and most attendees expect
+it. The more information you ask for at registration, the more friction you add, and some people will skip registering 
+altogether. 
+Set the sponsor’s expectations before they ask for too much.</p>
+
+<h2 id="advice-for-sponsors">Advice for sponsors</h2>
+
+<p>Sponsors often ask how to make the most of the event. A few suggestions worth passing along:</p>
+
+<p>For the speaker slot: a technical talk about what the company actually does has more impact than a generic pitch. 
+When a developer shows the kinds of problems they’re solving day-to-day, it attracts talent more effectively than a 
+slide about benefits. 
+People want to know what they’d be working on.</p>
+
+<p>For the 10-minute company slot: a brief intro and any open positions. Keep it focused.</p>
+
+<h2 id="code-of-conduct">Code of conduct</h2>
+
+<p>Make sure the sponsor company is aware of your code of conduct before the event and agrees to follow it. As organizer, 
+be ready to give feedback if the tone or content of their presentation feels off for the room.
+See the <a href="/code_of_conduct">Code of Conduct</a> section for more.</p>
+
+
+        </main>
+
+        <footer>
+  <div>
+    © 2026 thoughtbot, inc.
+  </div>
+  <div>
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Recording and Streaming | Event Organizer Handbook by thoughtbot</title>
+
+<meta name="description" content="Want to start a meetup but have no idea how to start? This handbook covers everything!" />
+
+<link rel="stylesheet" href="/_bridgetown/static/index.HX4OZ4VU.css" />
+<script src="/_bridgetown/static/index.3AHEUSGL.js" defer></script>
+<script type="module">let lastmod = 0
+let reconnectAttempts = 0
+function startLiveReload() {
+  const connection = new EventSource("/_bridgetown/live_reload")
+
+  connection.addEventListener("message", event => {
+    reconnectAttempts = 0
+    if (document.querySelector("#bridgetown-build-error")) document.querySelector("#bridgetown-build-error").close()
+    if (event.data == "reloaded!") {
+      location.reload()
+    } else {
+      const newmod = Number(event.data)
+      if (lastmod > 0 && newmod > 0 && lastmod < newmod) {
+        location.reload()
+      } else {
+        lastmod = newmod
+      }
+    }
+  })
+
+  connection.addEventListener("builderror", event => {
+    let dialog = document.querySelector("#bridgetown-build-error")
+    if (!dialog) {
+      dialog = document.createElement("dialog")
+      dialog.id = "bridgetown-build-error"
+      dialog.style.borderColor = "red"
+      dialog.style.fontSize = "110%"
+      dialog.innerHTML = `
+        <p style="color:red">There was an error when building the site:</p>
+        <output><pre></pre></output>
+        <p><small>Check your Bridgetown logs for further details.</small></p>
+      `
+      document.body.appendChild(dialog)
+      dialog.showModal()
+    }
+    dialog.querySelector("pre").textContent = JSON.parse(event.data)
+  })
+
+  connection.addEventListener("error", () => {
+    if (connection.readyState === 2) {
+      // reconnect with new object
+      connection.close()
+      reconnectAttempts++
+      if (reconnectAttempts < 25) {
+        console.warn("Live reload: attempting to reconnect in 3 seconds...")
+        setTimeout(() => startLiveReload(), 3000)
+      } else {
+        console.error("Too many live reload connections failed. Refresh the page to try again.")
+      }
+    }
+  })
+}
+
+startLiveReload()
+</script>
+
+  </head>
+  <body class="page ">
+    <div class="site-layout" id="site-layout">
+      <aside class="sidebar">
+        <button
+          class="sidebar__toggle"
+          id="sidebar-toggle"
+          aria-expanded="true"
+          aria-controls="sidebar-nav"
+          aria-label="Toggle navigation"
+        >&#8249;</button>
+
+        <div class="sidebar__nav" id="sidebar-nav">
+          <nav>
+  <ul>
+    <li>
+      <a href="/introduction" class="">Introduction</a>
+      <ul>
+        <li>
+          <a href="/introduction/about_us" class="">About Us</a>
+        </li>
+        <li>
+          <a href="/introduction/why_organizing_a_meetup" class="">Why Organizing a Meetup?</a>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+        <a href="/name_purpose_and_branding" class="">Name, Purpose, and Branding</a>
+    </li>
+
+    <li><a href="/planning" class="">Planning</a></li>
+    <li><a href="/venue" class="">Venue</a></li>
+    <li><a href="/speakers" class="">Speakers</a></li>
+    <li><a href="/food_and_beverages" class="">Food and Beverages</a></li>
+    <li><a href="/sponsors" class="">Sponsors</a></li>
+    <li>
+      <a href="/online_presence" class="">Online Presence</a>
+      <ul>
+        <li>
+          <a href="/online_presence/branding" class="">Branding</a>
+        </li>
+        <li>
+          <a href="/online_presence/social_media" class="">Social Media</a>
+        </li>
+        <li>
+          <a href="/online_presence/webpage" class="">Webpage</a>
+        </li>
+      </ul>
+    </li>
+    <li><a href="/recording_and_streaming" class="active">Recording and Streaming</a></li>
+    <li><a href="/swag" class="">Swag</a></li>
+    <li><a href="/volunteers" class="">Volunteers</a></li>
+    <li><a href="/code_of_conduct" class="">Code of Conduct</a></li>
+    <li><a href="/post_event" class="">Post-Event</a></li>
+    <li><a href="/growing_the_community" class="">Growing the Community</a></li>
+    <li><a href="/first_event_checklist" class="">First Event Checklist</a></li>
+  </ul>
+</nav>
+
+        </div>
+      </aside>
+
+      <div class="site-body">
+        <main>
+          <h1>Recording and Streaming</h1>
+
+<p>Recording and streaming are completely optional. A meetup without a stream is still a good meetup. That said, a 
+recording extends the reach of every talk beyond the people in the room, and a public archive on YouTube adds 
+credibility over time.</p>
+
+<h2 id="the-minimal-approach">The minimal approach</h2>
+
+<p>A phone pointed at the speaker will get you started. Audio is the part that tends to fall apart: the built-in 
+microphone picks up everything, including room noise and distance. A wireless mic clipped to the speaker makes a 
+noticeable difference even with a phone setup. If wireless mics are out of budget, a shotgun mic is a cheaper 
+alternative that still improves over the phone alone.</p>
+
+<p>Stream directly to your platform of choice from the phone, or use free software like OBS on a laptop for more control.</p>
+
+<h2 id="rubymxs-setup">RubyMX’s setup</h2>
+
+<p>After the first few events, RubyMX invested in a more stable setup:</p>
+
+<ul>
+  <li>Logitech StreamCam (1080p: good quality without demanding too much bandwidth)</li>
+  <li>Tripod</li>
+  <li>Rode wireless microphones</li>
+  <li>A dedicated MacBook for streaming</li>
+</ul>
+
+<p>The dedicated machine matters. Running the stream and presenting slides from the same computer is painful. 
+Keep them separate.</p>
+
+<h2 id="software">Software</h2>
+
+<p>RubyMX uses <a href="https://streamyard.com/">Streamyard</a>, which handles overlays, lower-thirds with speaker names, and multi-platform broadcasting.
+For a small team, it’s worth the subscription. <a href="https://obsproject.com/">OBS</a> is a free alternative with similar capabilities but a steeper
+learning curve.</p>
+
+<p>One option worth exploring: find a company that already has a Streamyard account and ask if they’d be willing to use it 
+as their contribution to the event. It won’t add cost on their side, and it saves you a recurring expense.</p>
+
+<h2 id="where-to-stream">Where to stream</h2>
+
+<p>RubyMX streams to YouTube. It started on YouTube and Facebook simultaneously, but attendance on Facebook was low enough
+that it wasn’t worth maintaining. If you’re starting out, pick one platform and stay consistent.</p>
+
+<p>Streamyard records the session automatically. That recording becomes the archive link posted on your website and social 
+channels after the event.</p>
+
+<h2 id="during-the-event">During the event</h2>
+
+<p>Don’t start the stream and walk away. Have someone, a co-organizer or a volunteer, watching the stream throughout the 
+event. Things to catch early: a mic that cut out, the wrong screen being shared, or a full disconnection. A problem 
+noticed in the first two minutes is recoverable. One noticed at the end isn’t.</p>
+
+
+        </main>
+
+        <footer>
+  <div>
+    © 2026 thoughtbot, inc.
+  </div>
+  <div>
+    The design of a robot and thoughtbot are registered trademarks of thoughtbot, inc.
+  </div>
+</footer>
+
+      </div>
+    </div>
+  </body>
+</html>
