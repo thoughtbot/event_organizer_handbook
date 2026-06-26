@@ -1,6 +1,8 @@
-# Bridgetown Website README
+# Event Organizer Handbook
 
-Welcome to your new Bridgetown website! You can update this README file to provide additional context and setup information for yourself or other contributors.
+A practical guide for organizing tech meetups and community events, built from thoughtbot's experience running RubyMX, a Ruby meetup in Guadalajara, Mexico.
+
+Live site: https://thoughtbot.github.io/event_organizer_handbook
 
 ## Table of Contents
 
@@ -10,6 +12,8 @@ Welcome to your new Bridgetown website! You can update this README file to provi
 - [Commands](#commands)
 - [Deployment](#deployment)
 - [Contributing](#contributing)
+- [License](#license)
+- [About thoughtbot](#about-thoughtbot)
 
 ## Prerequisites
 
@@ -25,25 +29,21 @@ Welcome to your new Bridgetown website! You can update this README file to provi
 ## Install
 
 ```sh
-cd bridgetown-site-folder
+cd event-organizer-handbook
 bundle install && npm install
 ```
+
 > Learn more: [Bridgetown Getting Started Documentation](https://www.bridgetownrb.com/docs/).
 
 ## Development
 
 To start your site in development mode, run `bin/bridgetown start` and navigate to [localhost:4000](https://localhost:4000/)!
 
-Use a [theme](https://github.com/topics/bridgetown-theme) or add some [plugins](https://www.bridgetownrb.com/plugins/) to get started quickly.
-
 ### Commands
 
 ```sh
 # running locally
 bin/bridgetown start
-
-# build & deploy to production
-bin/bridgetown deploy
 
 # load the site up within a Ruby console (IRB)
 bin/bridgetown console
@@ -53,13 +53,14 @@ bin/bridgetown console
 
 ## Deployment
 
-You can deploy Bridgetown sites on hosts like Render or Vercel as well as traditional web servers by simply building and copying the output folder to your HTML root.
-
-> Read the [Bridgetown Deployment Documentation](https://www.bridgetownrb.com/docs/deployment) for more information.
+The site deploys automatically to GitHub Pages on every push to `main` via the
+`.github/workflows/gh-pages.yml` workflow. No manual deployment is needed.
 
 ## Contributing
 
-If repo is on GitHub:
+We welcome contributions! This handbook is open source, but content changes
+should align with the editorial guidelines and maintainers have final say over
+what is merged.
 
 1. Fork it
 2. Clone the fork using `git clone` to your local development machine.
@@ -67,3 +68,26 @@ If repo is on GitHub:
 4. Commit your changes (`git commit -am 'Add some feature'`)
 5. Push to the branch (`git push origin my-new-feature`)
 6. Create a new Pull Request
+
+## License
+
+The handbook content is licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The code in
+this repository is licensed under the [MIT License](LICENSE.md).
+
+Built with [Bridgetown](https://www.bridgetownrb.com/), a Ruby-powered static
+site generator.
+
+## About thoughtbot
+
+![thoughtbot](https://thoughtbot.com/thoughtbot-logo-for-readmes.svg)
+
+This repo is maintained and funded by thoughtbot, inc.
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
+
+We love open source software!
+See [our other projects][community].
+We are [available for hire][hire].
+
+[community]: https://thoughtbot.com/community?utm_source=github
+[hire]: https://thoughtbot.com/hire-us?utm_source=github
