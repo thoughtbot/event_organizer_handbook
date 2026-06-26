@@ -1,2 +1,2 @@
 (()=>{console.info("Bridgetown is loaded!");var t=document.getElementById("sidebar-toggle"),i=document.getElementById("site-layout");if(t&&i){let c="sidebar-collapsed",Q=l=>{l?(i.dataset.sidebarCollapsed="",t.setAttribute("aria-expanded","false"),t.innerHTML="&#8250;"):(delete i.dataset.sidebarCollapsed,t.setAttribute("aria-expanded","true"),t.innerHTML="&#8249;"),localStorage.setItem(c,l)};t.addEventListener("click",()=>{Q(!i.hasAttribute("data-sidebar-collapsed"))}),localStorage.getItem(c)==="true"&&Q(!0)}})();
-//# sourceMappingURL=/_bridgetown/static/index.3AHEUSGL.js.map
+//# sourceMappingURL=/event_organizer_handbook/_bridgetown/static/index.UGTSL74R.js.map
