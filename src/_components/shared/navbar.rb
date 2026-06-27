@@ -4,6 +4,6 @@ class Shared::Navbar < Bridgetown::Component
   end
 
   def active?(path)
-    @resource.relative_url.start_with?(path)
+    @resource.relative_url.start_with?(Bridgetown::Current.site.base_path + path)
   end
 end

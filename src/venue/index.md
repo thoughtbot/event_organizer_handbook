@@ -12,7 +12,7 @@ The minimum requirements for a tech meetup venue:
 - Internet access for speakers (guest wifi for all attendees is a bonus, not a requirement)
 - Accessible location: ground floor or elevator access
 
-For the most common model, where a sponsor company hosts the event at their offices, see the [Sponsors](/sponsors) 
+For the most common model, where a sponsor company hosts the event at their offices, see the [Sponsors](<%= relative_url '/sponsors' %>) 
 section.
 
 ## When there's no local office

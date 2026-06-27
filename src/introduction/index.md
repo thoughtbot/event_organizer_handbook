@@ -16,5 +16,5 @@ in a coworking space and has been running monthly ever since.
 
 Before getting into the details, two pages worth reading first:
 
-- [Why Organizing a Meetup?](/introduction/why_organizing_a_meetup): what a meetup actually gives to the community, to speakers, and to you as the organizer
-- [About Us](/introduction/about_us): where this handbook comes from and who wrote it
+- [Why Organizing a Meetup?](<%= relative_url '/introduction/why_organizing_a_meetup' %>): what a meetup actually gives to the community, to speakers, and to you as the organizer
+- [About Us](<%= relative_url '/introduction/about_us' %>): where this handbook comes from and who wrote it

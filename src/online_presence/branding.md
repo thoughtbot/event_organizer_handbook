@@ -3,7 +3,7 @@ layout: page
 title: Branding
 ---
 
-The basics covered in the [Name, Purpose, and Branding](/name_purpose_and_branding) section apply here: get a logo, secure consistent handles,
+The basics covered in the [Name, Purpose, and Branding](<%= relative_url '/name_purpose_and_branding' %>) section apply here: get a logo, secure consistent handles,
 and register a domain. What this section covers is the practical side of using that brand for event communications.
 
 ## Templates save time

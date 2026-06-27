@@ -46,11 +46,11 @@ Confirm the sponsor, venue, and date on the spot if you can, then announce it to
 
 From there, the order matters:
 
-1. Find your community speaker from the speaker pool (see the [Speakers](/speakers) section).
+1. Find your community speaker from the speaker pool (see the [Speakers](<%= relative_url '/speakers' %>) section).
 2. Coordinate with the sponsor to find their speaker.
 3. Once the first speaker is confirmed, announce the event online and open tickets on Eventbrite.
 4. Once the second speaker is confirmed, finalize the announcement and, if you are going to stream the talk, 
-see the [Recording and Streaming](/recording_and_streaming) section. 
+see the [Recording and Streaming](<%= relative_url '/recording_and_streaming' %>) section. 
 5. A couple of days before the event, do a final push: remind your audience and promote the stream.
 
 RubyMX uses one rotating sponsor per event. A single fixed sponsor would be simpler, but the rotating model has a 

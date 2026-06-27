@@ -13,7 +13,7 @@ At minimum, a meetup website needs:
 - A short description of what the meetup is about
 - A way for people to submit talk proposals
 - Links to your social accounts and registration platform
-- Your domain (see [Name, Purpose, and Branding](/name_purpose_and_branding))
+- Your domain (see [Name, Purpose, and Branding](<%= relative_url '/name_purpose_and_branding' %>))
 
 ## What to add over time
 

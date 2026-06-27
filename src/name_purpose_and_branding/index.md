@@ -42,4 +42,4 @@ At minimum, secure consistent handles across the platforms you plan to use and a
 Which platforms depend on your community: RubyMX uses Twitter, Instagram, LinkedIn, YouTube, and Facebook, plus a custom 
 domain at comunidadruby.mx, but not every meetup needs all of those.
 
-The visual side (logo, colors, tone) matters more once you have an audience. More on that in the [Online Presence](/online_presence) section.
+The visual side (logo, colors, tone) matters more once you have an audience. More on that in the [Online Presence](<%= relative_url '/online_presence' %>) section.

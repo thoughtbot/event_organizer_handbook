@@ -64,4 +64,4 @@ For the 10-minute company slot: a brief intro and any open positions. Keep it fo
 
 Make sure the sponsor company is aware of your code of conduct before the event and agrees to follow it. As organizer, 
 be ready to give feedback if the tone or content of their presentation feels off for the room.
-See the [Code of Conduct](/code_of_conduct) section for more.
+See the [Code of Conduct](<%= relative_url '/code_of_conduct' %>) section for more.
