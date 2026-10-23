@@ -45,6 +45,10 @@ that it wasn't worth maintaining. If you're starting out, pick one platform and 
 Streamyard records the session automatically. That recording becomes the archive link posted on your website and social 
 channels after the event.
 
+## Before going live
+
+Before going live, have a presenter and an observer check the indicated slide detail in the room, on the shared screen and in a permitted test recording. The optional [Hybrid-room pointing rehearsal record](https://light-tracer.com/wp-content/uploads/2026/10/hybrid-pointing-rehearsal-record-open-v1.pdf) (Light Tracer, CC BY 4.0) is a two-page blank worksheet for recording those views, followed by one change and a recheck.
+
 ## During the event
 
 Don't start the stream and walk away. Have someone, a co-organizer or a volunteer, watching the stream throughout the 
